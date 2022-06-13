@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formular Reiseziel</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <form
+          id="myForm"
+          action="https://formspree.io/f/xlezzoeb"
+          method="post"
+        >
+          <label class="travelTheWorld" for="travelTheWorld"
+            >Travel the world</label
+          >
+          <br />
+          <br />
+          <br />
+          <!-- <div class="FromTo"> -->
+          <!-- <div class="From"> -->
+          <label class="labelFrom" for="From">From</label>
+          <input type="text" name="From" id="From" required />
+          <!-- </div> -->
+          <!-- <div class="To"> -->
+          <label class="labelTo" for="To">To</label>
+          <input type="text" name="To" id="To" required />
+          <!-- </div> -->
+          <!-- </div> -->
+          <br />
+          <!-- <div class="button"> -->
+          <!-- <input type="button"  onclick="myFunction()" value="Clear me" class="buttonSurpriseMe"></input> -->
+          <!-- <button type="submit" onclick="myFunction()" class="buttonSurpriseMe">
+            Clear me
+          </button> -->
+          <button type="submit" class="buttonLetsGo">Let's go</button>
+
+          <button type="submit" class="buttonLetsGo">Let's go</button>
+          <!-- </div> -->
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- this function clears the form -->
+<script>
+  function myFunction() {
+    document.getElementById("myForm").reset();
+  }
+</script>
